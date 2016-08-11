@@ -19,8 +19,8 @@ git:
 before_install:
   - git submodule update --init --recursive
 script:
-  - xcrun simctl list --json devicetypes
-  - xcrun simctl list --json devices
+  - brew install sift
+  - zsh script.zsh
   - xcodebuild -version
 notifications:
   email: false
