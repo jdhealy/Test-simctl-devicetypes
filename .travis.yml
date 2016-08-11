@@ -19,8 +19,8 @@ git:
 before_install:
   - git submodule update --init --recursive
 script:
-  -	xcrun simctl list --json devicetypes
-  -	xcrun simctl list --json devices
-	- xcodebuild -version
+  - xcrun simctl list --json devicetypes
+  - xcrun simctl list --json devices
+  - xcodebuild -version
 notifications:
   email: false
